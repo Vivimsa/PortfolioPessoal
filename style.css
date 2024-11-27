@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Delius+Swash+Caps&family=Ephesis&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Delius+Swash+Caps&family=Ephesis&family=Quicksand:wght@300..700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Delius+Swash+Caps&family=DynaPuff:wght@400..700&family=Ephesis&family=Margarine&family=Quicksand:wght@300..700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Delius+Swash+Caps&family=DynaPuff:wght@400..700&family=Ephesis&family=Margarine&family=Quicksand:wght@300..700&family=Ribeye+Marrow&family=Righteous&display=swap');
+
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #topButton:hover {
+    background-color: rgb(61, 59, 59);
+  }
+
+.menu-mobile {
+    display: none;
+  } 
+
+/* Media Query para telas grandes (desktop) */
+
+@media (min-width: 1024px) {
+
+     body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navbar, .container-fluid, .row, .col {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        padding: 0;
+    }
+
+    #nome{
+        margin-top: 10px;
+        margin-left: 200px;
+        font-family: "Ephesis", cursive;
+        font-weight: bolder;
+        font-size: 60px;
+        color: #d5a82bc5;
+        text-decoration: none;
+    }
+
+    .fundo2cores{
+        background: linear-gradient(to right, #385A64 42%, #733671 0%);
+    }
+    
+   
+    .row {
+        min-height: 90vh; 
+        align-items: center; 
+    }
+
+    
+    #imagemMulher{
+        margin-left: 400px;
+        margin-right: auto;
+        margin-bottom: 150px;
+        display: block;
+        max-width: 100%;
+    }
+    
+    .textoMenu .nav-link{
+        color: rgba(255, 255, 255, 0.651);
+        font-family: "DynaPuff", system-ui;
+        font-size: 20px;
+    }
+
+    .textoMenu .nav-link:hover{
+        color: white;
+    }
+
+    .PrimeiraColuna, .TerceiraColuna {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #SegundaColuna{
+        margin-top: 90px;
+        font-family: "Delius Swash Caps", serif;
+        font-size: 80px;
+        text-align: center;
+        color: #b58421da;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 1;
+    }
+ 
+    .row.align-items-center {
+        min-height: 80vh;
+    }
+
+    .TerceiraColuna{
+        background-color: #4279FA;
+    }
+
+
+    #imagemID{
+        width: 600px;
+    }
+
+    .dados {
+        font-size: 50px;
+        margin: 0;
+        text-align: left;
+        font-family: "Ribeye Marrow", serif;
+        font-weight: bold;
+    }
+    
+    .icon-size {
+        width: 70px;
+        height: auto;
+    }
+
+    #eu-img{
+        width: 800px;
+        margin-left: 200px;
+        margin-top: 600px;
+    }
+
+    .fundo-expectativas{
+        background-color: #163788; 
+      
+    }
+
+    .expectativas-cards{
+        background-color: rgba(255, 255, 255, 0.753);
+        margin-left: 100px;
+        margin-top: 20px;
+        font-size: 20px;
+        border-radius: 30px;
+        padding: 10px;
+        border: 2px solid black;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+        font-family: "DynaPuff", system-ui;
+    }
+
+    
+    .form-container {
+        background-color: #ffffff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+        border: 1px solid #ceb0b0;
+        border-radius: 5px;
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+    }
+    
+    form input, 
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ceb0b0;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: 2 px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    form button:hover {
+        background-color: #0056b3;
+    }
+
+    #contato {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+        font-family: "Ephesis", cursive;
+        font-size: 100px;
+    }
+
+   
+}
+
+
+/* Media Query para tablets (até 1024px) */
+@media (max-width: 1024px) {
+    body, html {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        position: relative
+    }
+    .navbar, .container-fluid, .row, .col {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        padding: 0;
+    }
+
+    .textoMenu .nav-link{
+        color: rgba(255, 255, 255, 0.651);
+        font-family: "DynaPuff", system-ui;
+        font-size: 20px;
+    }
+
+    .textoMenu .nav-link:hover{
+        color: white;
+    }
+
+    #nome{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-family: "Ephesis", cursive;
+        font-weight: bolder;
+        font-size: 40px;
+        color: #d5a82bc5;
+        text-decoration: none;
+    }
+
+    .fundo2cores{
+        background: linear-gradient(to right, #385A64 42%, #733671 0%);
+    }
+
+    .row {
+        min-height: 90vh; 
+        align-items: center; 
+    }
+
+    #imagemMulher{
+        margin-left: 400px;
+        margin-right: auto;
+        margin-bottom: 150px;
+        display: block;
+        max-width: 100%;
+    }
+
+    #SegundaColuna{
+        margin-top: 500px;
+        font-family: "Delius Swash Caps", serif;
+        font-size: 60px;
+        text-align: center;
+        color: #b58421da;
+        line-height: 1;
+    }
+
+    #eu-img{
+        width: 500px;
+        margin-left: 70px;
+        margin-top: 600px;
+    }
+    .dados {
+        font-size: 50px;
+        margin: 0;
+        text-align: left;
+        font-family: "Ribeye Marrow", serif;
+        font-weight: bold;
+    }
+    
+    .icon-size {
+        width: 70px;
+        height: auto;
+    }
+
+    .fundo-expectativas{
+        background-color: #163788; 
+      
+    }
+
+    .expectativas-cards{
+        background-color: rgba(255, 255, 255, 0.753);
+        margin-left: 100px;
+        margin-top: 20px;
+        font-size: 20px;
+        border-radius: 30px;
+        padding: 10px;
+        border: 2px solid black;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+        font-family: "DynaPuff", system-ui;
+    }
+
+    .form-container {
+        background-color: #ffffff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+        border: 1px solid #ceb0b0;
+        border-radius: 5px;
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+    }
+    
+    form input, 
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ceb0b0;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: 2 px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    form button:hover {
+        background-color: #0056b3;
+    }
+
+    #contato {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+        font-family: "Ephesis", cursive;
+        font-size: 100px;
+    }
+
+   
+}
+
+/* Media Query para telas pequenas (smartphones, até 768px) */
+@media (max-width: 768px) {
+    .menu-mobile {
+        display: block; /* Mostra o menu */
+        background-color: #f8f8f8; /* Cor de fundo do menu */
+        padding: 10px;
+        border: 1px solid #ddd; /* Borda ao redor do menu */
+        border-radius: 5px;
+      }
+    
+      .menu-mobile ul {
+        list-style-type: none; /* Remove marcadores da lista */
+        margin: 0;
+        padding: 0;
+      }
+    
+      .menu-mobile li {
+        margin: 10px 0; /* Espaçamento entre os itens */
+      }
+    
+      .menu-mobile a {
+        text-decoration: none; /* Remove sublinhado dos links */
+        color: #333; /* Cor do texto */
+        font-size: 18px; /* Tamanho da fonte */
+        padding: 10px; /* Espaçamento interno */
+        display: block; /* Cada link ocupa toda a largura */
+        background-color: #fff; /* Fundo dos links */
+        border: 1px solid #ddd; /* Borda dos links */
+        border-radius: 5px; /* Borda arredondada */
+        transition: background-color 0.3s; /* Animação ao passar o mouse */
+      }
+    
+      .menu-mobile a:hover {
+        background-color: #e0e0e0; /* Cor ao passar o mouse */
+        color: #000; /* Cor do texto ao passar o mouse */
+      }
+
+
+      #imagemMulher{
+        margin-left: 100px;
+        margin-right: auto;
+        margin-bottom: 150px;
+        display: block;
+        max-width: 100%;
+    }
+    
+    #SegundaColuna{
+        margin-top: 100px;
+        font-family: "Delius Swash Caps", serif;
+        font-size: 10px;
+        text-align: center;
+        color: #b58421da;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 1;
+    }
+
+    .icon-size {
+        width: 20px;
+        height: auto;
+    }
+
+    .dados {
+        font-size: 30px;
+        margin: 0;
+        text-align: left;
+        font-family: "Ribeye Marrow", serif;
+        font-weight: bold;
+    }
+
+    .expectativas-cards{
+        background-color: rgba(255, 255, 255, 0.753);
+        margin-left: 100px;
+        margin-top: 20px;
+        font-size: 20px;
+        border-radius: 30px;
+        padding: 10px;
+        border: 2px solid black;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+        font-family: "DynaPuff", system-ui;
+    }
+
+    .form-container {
+        background-color: #ffffff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+        border: 1px solid #ceb0b0;
+        border-radius: 5px;
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+    }
+    
+    form input, 
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ceb0b0;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: 2 px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    form button:hover {
+        background-color: #0056b3;
+    }
+
+    #contato {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+        font-family: "Ephesis", cursive;
+        font-size: 100px;
+    }
+
+    .fundo-expectativas{
+        background-color: #163788; 
+      
+    }
+    .TerceiraColuna{
+        background-color: #4279FA;
+    }
+
+    .menu-mobile{
+        background-color: #385A64;
+    }
+
+    .menu-mobile a{
+        background-color: #5b8b99;
+        font-family: "DynaPuff", system-ui;
+        color: rgba(255, 255, 255, 0.651);
+        text-align: center;
+    }
+
+}
