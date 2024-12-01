@@ -215,23 +215,9 @@
         overflow-x: hidden;
         position: relative
     }
-    .navbar, .container-fluid, .row, .col {
-        margin: 0;
-        padding: 0;
-    }
-    .navbar {
-        padding: 0;
-    }
+    
 
-    .textoMenu .nav-link{
-        color: rgba(255, 255, 255, 0.651);
-        font-family: "DynaPuff", system-ui;
-        font-size: 20px;
-    }
-
-    .textoMenu .nav-link:hover{
-        color: white;
-    }
+    
 
     #nome{
         margin-top: 10px;
@@ -244,7 +230,7 @@
     }
 
     .fundo2cores{
-        background: linear-gradient(to right, #385A64 42%, #733671 0%);
+        background-color:  #733671;
     }
 
     .row {
@@ -253,7 +239,7 @@
     }
 
     #imagemMulher{
-        margin-left: 400px;
+        margin-left: 200px;
         margin-right: auto;
         margin-bottom: 150px;
         display: block;
@@ -267,6 +253,10 @@
         text-align: center;
         color: #b58421da;
         line-height: 1;
+    }
+
+    .TerceiraColuna{
+        background-color: #4279FA;
     }
 
     #eu-img{
